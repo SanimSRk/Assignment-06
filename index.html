@@ -4,20 +4,165 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Sanim.come</title>
   <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body>
-  <header>
-    <nav>
+  <header class="w-[85%] mx-auto">
+    <nav class="mt-3">
+      <div class="navbar justify-between bg-base-100">
+        <div class="">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+              </svg>
+            </div>
+            <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box  gap-5">
+              <span class="p-3 tooltip tooltip-bottom  bg-[#0307121A] rounded-full" data-tip="Home">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                  stroke="currentColor" class="w-6 h-6">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+                </svg>
 
+              </span>
+              <span class="p-3 tooltip tooltip-bottom bg-[#0307121A] rounded-full" data-tip="edit">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                  stroke="currentColor" class="w-6 h-6">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="m16.862 4.487 1.687-1.688a1.875 1.875 0 1 1 2.652 2.652L6.832 19.82a4.5 4.5 0 0 1-1.897 1.13l-2.685.8.8-2.685a4.5 4.5 0 0 1 1.13-1.897L16.863 4.487Zm0 0L19.5 7.125" />
+                </svg>
+
+
+              </span>
+              <span class="p-3 tooltip tooltip-bottom bg-[#0307121A] rounded-full" data-tip="add">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                  stroke="currentColor" class="w-6 h-6">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M18 7.5v3m0 0v3m0-3h3m-3 0h-3m-2.25-4.125a3.375 3.375 0 1 1-6.75 0 3.375 3.375 0 0 1 6.75 0ZM3 19.235v-.11a6.375 6.375 0 0 1 12.75 0v.109A12.318 12.318 0 0 1 9.374 21c-2.331 0-4.512-.645-6.374-1.766Z" />
+                </svg>
+
+
+              </span>
+              <span class="p-3 tooltip tooltip-bottom bg-[#0307121A] rounded-full" data-tip="Flag">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                  stroke="currentColor" class="w-6 h-6">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M3 3v1.5M3 21v-6m0 0 2.77-.693a9 9 0 0 1 6.208.682l.108.054a9 9 0 0 0 6.086.71l3.114-.732a48.524 48.524 0 0 1-.005-10.499l-3.11.732a9 9 0 0 1-6.085-.711l-.108-.054a9 9 0 0 0-6.208-.682L3 4.5M3 15V4.5" />
+                </svg>
+
+
+              </span>
+
+            </ul>
+          </div>
+          <a class="btn btn-ghost text-4xl font-extrabold uppercase "><img src="image/logo (3).png" alt=""></a>
+        </div>
+
+
+        <div class="flex gap-6">
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal gap-5 px-1">
+
+              <span class="p-3 tooltip tooltip-bottom  bg-[#0307121A] rounded-full" data-tip="Home">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                  stroke="currentColor" class="w-6 h-6">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+                </svg>
+
+              </span>
+              <span class="p-3 tooltip tooltip-bottom bg-[#0307121A] rounded-full" data-tip="edit">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                  stroke="currentColor" class="w-6 h-6">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="m16.862 4.487 1.687-1.688a1.875 1.875 0 1 1 2.652 2.652L6.832 19.82a4.5 4.5 0 0 1-1.897 1.13l-2.685.8.8-2.685a4.5 4.5 0 0 1 1.13-1.897L16.863 4.487Zm0 0L19.5 7.125" />
+                </svg>
+
+
+              </span>
+              <span class="p-3 tooltip tooltip-bottom bg-[#0307121A] rounded-full" data-tip="add">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                  stroke="currentColor" class="w-6 h-6">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M18 7.5v3m0 0v3m0-3h3m-3 0h-3m-2.25-4.125a3.375 3.375 0 1 1-6.75 0 3.375 3.375 0 0 1 6.75 0ZM3 19.235v-.11a6.375 6.375 0 0 1 12.75 0v.109A12.318 12.318 0 0 1 9.374 21c-2.331 0-4.512-.645-6.374-1.766Z" />
+                </svg>
+
+
+              </span>
+              <span class="p-3 tooltip tooltip-bottom bg-[#0307121A] rounded-full" data-tip="Flag">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                  stroke="currentColor" class="w-6 h-6">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M3 3v1.5M3 21v-6m0 0 2.77-.693a9 9 0 0 1 6.208.682l.108.054a9 9 0 0 0 6.086.71l3.114-.732a48.524 48.524 0 0 1-.005-10.499l-3.11.732a9 9 0 0 1-6.085-.711l-.108-.054a9 9 0 0 0-6.208-.682L3 4.5M3 15V4.5" />
+                </svg>
+
+
+              </span>
+
+            </ul>
+          </div>
+          <div class="">
+            <a class="btn text-xl bg-[#797DFC] text-white rounded-3xl ">Sign In</a>
+          </div>
+        </div>
+      </div>
     </nav>
+    <div>
+      <section class="my-5">
+        <div
+          class="bg-[url('image/bgbanner.png')] bg-[#12132D] rounded-lg lg:h-[540px] bg-no-repeat bg-center bg-cover ">
+          <div class=" lg:flex justify-center items-center gap-10 lg:p-24 p-5">
+
+
+            <div class="lg:w-2/3 ">
+              <h2 class=" lg:leading-normal text-4xl lg:text-6xl text-white font-extrabold ">Welcome to the <span
+                  class="text-[#797DFC]">ReTro</span>
+                Forum</h2>
+              <p class="text-xl text-white my-8">Share your favorite opinion and win and wp forum coffee mug!</p>
+              <div class="w-full lg:w-[80%] flex justify-between bg-white rounded-3xl py-2 px-3 ">
+                <input type="text" placeholder="Type here" class="  rounded-3xl lg:w-[20%] py-2 outline-none">
+                <button class=" btn rounded-3xl bg-[#797DFC] text-white text-xl">Search</button>
+              </div>
+
+            </div>
+            <div class="shadow-lg bg-[#FFFFFF] p-12 flex gap-4 lg:mt-0 mt-5">
+              <div>
+                <h2 class="flex  text-2xl ">Registered </h2>
+                <h2 class="flex my-2 text-2xl ">Frame </h2>
+                <h2 class="flex  text-2xl ">Topics</h2>
+                <h2 class="flex mt-2 text-2xl ">Replies</h2>
+              </div>
+
+              <div>
+                <h2 class="flex  text-xl ">01 </h2>
+                <h2 class="flex my-3 text-xl ">05 </h2>
+                <h2 class="flex  text-xl ">01 </h2>
+                <h2 class="flex mt-3 text-xl ">01 </h2>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </section>
+    </div>
   </header>
 
-  <main>
-
+  <main class="w-[85%] mx-auto">
+    <section class="my-[100px]">
+      <div class=" text-center w-2/3 mx-auto">
+        <h2 class="text-4xl font-extrabold"> Let’s Discuss</h2>
+        <p class="font-medium mt-5">Yes, you can run unit tests and view the results directly within the app. The
+          integrated testing features
+          allow for a
+          streamlined .</p>
+      </div>
+    </section>
   </main>
   <footer>
 
