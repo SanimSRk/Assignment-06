@@ -6,7 +6,6 @@ const allDataLoding = async () => {
   );
   const jsonData = await dataLode.json();
   const data = jsonData.posts;
-  console.log(data);
 
   //-------add to card detalis-------
 
@@ -122,7 +121,7 @@ const btnValues = async category => {
   );
   const btnDarts = await btnInnerText.json();
   const finalData = btnDarts.posts;
-  console.log(finalData);
+
   const cardContners = document.getElementById('cardContners');
   cardContners.innerHTML = '';
   finalData.forEach(cards => {
@@ -216,7 +215,51 @@ const searchHendels = () => {
   btnValues(inputValue);
 };
 
-//------loding spners-------
+//------letest Post section -------
+const lestPostSection = document.getElementById('lestPostSection');
+const letsPostData = async () => {
+  const dataLode = await fetch(
+    ` https://openapi.programming-hero.com/api/retro-forum/latest-posts`
+  );
 
+  const data = await dataLode.json();
+
+  console.log(data);
+  data.forEach(letstPost => {
+    const div = document.createElement('div');
+    div.classList = `card w-full bg-base-100 border-2 border-[#12132D26] shadow-sm p-6`;
+    div.innerHTML = ` 
+  <figure><img src="${letstPost.cover_image}" alt="Shoes" />
+          </figure>
+          <div class="mt-3">
+            <div class="flex gap-2">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z" />
+</svg>
+
+              <h2>${letstPost.author?.posted_date || 'No publish date'}</h2>
+            </div>
+            <div>
+              <h2 class="text-xl my-3 font-bold">${letstPost.title}</h2>
+              <p>${letstPost.description}</p>
+            </div>
+            <div class=" flex mt-4 gap-2">
+              <div><img class="w-[50px] h-[50px] rounded-full object-cover" src="${
+                letstPost.profile_image
+              }" alt="image"></div>
+              <div>
+                <h2 class="font-bold">${letstPost.author.name}</h2>
+                <h2>${letstPost.author?.designation || 'Unknown'}</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+
+  `;
+    lestPostSection.appendChild(div);
+  });
+};
+
+letsPostData();
 btnValues();
 allDataLoding();
