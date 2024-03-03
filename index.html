@@ -153,9 +153,11 @@
 
       </section>
     </div>
+
   </header>
 
   <main class="w-[85%] mx-auto">
+
     <section class="my-[100px]">
       <div class=" text-center lg:w-2/3 mx-auto">
         <h2 class="text-4xl font-extrabold"> Let’s Discuss</h2>
@@ -164,6 +166,10 @@
           allow for a
           streamlined .</p>
       </div>
+      <div id="clickToLoading" class="flex justify-center hidden">
+        <span class="loading loading-spinner  loading-lg"></span>
+      </div>
+
       <div class="lg:flex mt-10 gap-6 ">
         <!---card section div style-->
         <div id="cardContners" class=" lg:w-[65%] ">
@@ -177,10 +183,11 @@
             <div class="flex justify-between  border-b-2 border-dotted border-[#12132D40] pb-4">
               <h2>Title</h2>
               <div class="flex gap-2 items-center">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                  stroke="currentColor" class="w-6 h-6">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
-                </svg>
+                <span class="text-green-500"> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                    stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+                  </svg>
+                </span>
 
                 <h2>Mark as read (<span id="countValue">0</span>)</h2>
               </div>

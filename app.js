@@ -68,7 +68,7 @@ const allDataLoding = async () => {
                     </div>
                   </div>
                  
-<button onclick="addDetalisShow('${cards.title}','${
+<button onclick="addDetalisShow('${cards.title.replace(/'/g, '')}','${
       cards.view_count
     }')"  class="  p-[2px] border-[4px] rounded-full border-[#10B981]">
                    <svg
@@ -117,7 +117,6 @@ const addDetalisShow = (id, view) => {
 
 //click to search section javascript-----
 const btnValues = async category => {
-  console.log(category);
   const btnInnerText = await fetch(
     ` https://openapi.programming-hero.com/api/retro-forum/posts?category=${category}`
   );
@@ -128,7 +127,7 @@ const btnValues = async category => {
   cardContners.innerHTML = '';
   finalData.forEach(cards => {
     const divs = document.createElement('div');
-
+    document.getElementById('clickToLoading').classList.add('hidden');
     divs.classList = `mb-7 card w-full p-4 lg:p-10 bg-[#F3F3F5] shadow-md`;
     divs.innerHTML = `
   <div class="lg:flex gap-4">
@@ -184,7 +183,7 @@ const btnValues = async category => {
                     </div>
                   </div>
                  
-<button onclick="addDetalisShow('${cards.title}','${
+<button onclick="addDetalisShow('${cards.title.replace(/'/g, '')}','${
       cards.view_count
     }')"  class="  p-[2px] border-[4px] rounded-full border-[#10B981]">
                    <svg
@@ -211,10 +210,13 @@ const btnValues = async category => {
 //------add to search function ---------
 
 const searchHendels = () => {
+  document.getElementById('clickToLoading').classList.remove('hidden');
   const inputValue = document.getElementById('inputValue').value;
-  console.log(inputValue);
 
   btnValues(inputValue);
 };
+
+//------loding spners-------
+
 btnValues();
 allDataLoding();
