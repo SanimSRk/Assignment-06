@@ -4,9 +4,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ReTro.come</title>
+  <title>ChatZone</title>
   <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
   <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    .gradient-text {
+      background: linear-gradient(to left, rgba(121, 125, 252, 0.07) 0%, rgba(121, 125, 252, 1) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+
+    }
+  </style>
 </head>
 
 <body>
@@ -61,7 +70,8 @@
 
             </ul>
           </div>
-          <a class="btn btn-ghost text-4xl font-extrabold uppercase "><img src="image/logo (3).png" alt=""></a>
+          <a class="btn btn-ghost text-2xl lg:text-4xl font-extrabold uppercase">Chat<span
+              class="text-[#797DFC]">Zone</span></a>
         </div>
 
 
@@ -108,7 +118,7 @@
             </ul>
           </div>
           <div class="">
-            <a class="btn text-xl bg-[#797DFC] text-white rounded-3xl ">Sign In</a>
+            <a class="btn lg:text-xl bg-[#797DFC] text-white rounded-3xl ">Sign In</a>
           </div>
         </div>
       </div>
@@ -122,14 +132,14 @@
 
             <div class="lg:w-2/3 ">
               <h2 class=" lg:leading-normal text-4xl lg:text-6xl text-white font-extrabold ">Welcome to the <span
-                  class="text-[#797DFC]">ReTro</span>
+                  class="gradient-text">ChatZone</span>
                 Forum</h2>
               <p class="text-xl text-white my-8">Share your favorite opinion and win and wp forum coffee mug!</p>
               <div class="w-full lg:w-[80%] flex justify-between bg-white rounded-3xl py-1 px-3 ">
                 <input id="inputValue" type="text" placeholder="Type here"
                   class="  rounded-3xl lg:w-full py-2 outline-none">
                 <button onclick="searchHendels()" id="inputValueBtn"
-                  class=" btn rounded-3xl bg-[#797DFC] text-white text-xl">Search</button>
+                  class=" btn rounded-3xl bg-[#797DFC] text-white lg:text-xl">Search</button>
               </div>
 
             </div>
@@ -235,7 +245,7 @@
 
     <div class="footer footer-center l text-base-content rounded">
       <div class="lg:w-2/3 mx-auto font-medium text-[16px]  ">
-        <h2 class="text-4xl font-extrabold">ReTro</h2>
+        <h2 class="text-4xl font-extrabold">ChatZone</h2>
         <p class="mt-4">If you have any questions, feedback, or inquiries, please don't hesitate to get in touch with
           us. Our
           dedicated
@@ -269,7 +279,7 @@
       </div>
       <div class="border-b-2 w-full border-dotted"></div>
       <div class=" ">
-        <p>Copyright © 2024 - All right reserved by ACME Industries Ltd</p>
+        <p>Copyright © 2024 - All right reserved by ChatZone Industries Ltd</p>
       </div>
 
 
